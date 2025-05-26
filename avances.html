@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CulturalHub - Avances</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#faf5ff',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7c3aed'
+                        },
+                        secondary: {
+                            500: '#ec4899',
+                            600: '#db2777'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm border-b sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <a href="home.html" class="flex items-center space-x-2">
+                        <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                            CulturalHub
+                        </span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home.html" class="text-gray-700 hover:text-purple-600 transition-colors">Inicio</a>
+                    <a href="avances.html" class="text-gray-900 hover:text-purple-600 transition-colors">Avances</a>
+                    <a href="proyecto.html" class="text-gray-700 hover:text-purple-600 transition-colors">Proyecto</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="home.html" class="block py-2 text-gray-700">Inicio</a>
+                <a href="avances.html" class="block py-2 text-gray-900">Avances</a>
+                <a href="proyecto.html" class="block py-2 text-gray-700">Proyecto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Introduction Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Introducción al Proyecto</h2>
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Actividad Principal</h3>
+                        <p class="text-gray-600">CulturalHub es un centro cultural innovador diseñado específicamente para jóvenes de 18 a 30 años, ofreciendo una amplia gama de actividades culturales y artísticas que incluyen exposiciones, talleres, presentaciones de obras, arte experimental y recitales.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Objetivos del Sitio Web</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Proporcionar información completa y atractiva sobre el centro cultural</li>
+                            <li>Facilitar la compra de tickets y la inscripción a talleres de manera sencilla y segura</li>
+                            <li>Promover la inclusión y accesibilidad para todos los usuarios</li>
+                            <li>Mejorar la experiencia del usuario con una navegación fluida y recursos útiles</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Concepto General y Estrategias de Atracción</h3>
+                        <p class="text-gray-600">El sitio web se enfoca en crear una experiencia digital moderna y atractiva que refleje la creatividad y dinamismo del centro cultural. Utilizamos un diseño visual impactante, contenido multimedia interactivo y una navegación intuitiva para captar la atención del público joven.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Análisis del Público Objetivo</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Demografía</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>Edad: 18-30 años</li>
+                                    <li>Estudiantes universitarios</li>
+                                    <li>Profesionales jóvenes</li>
+                                    <li>Artistas emergentes</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Intereses y Hábitos</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>Interés en actividades culturales y artísticas</li>
+                                    <li>Uso frecuente de redes sociales</li>
+                                    <li>Preferencia por experiencias interactivas</li>
+                                    <li>Valoración de la accesibilidad digital</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Identity Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Identidad Visual</h2>
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Paleta de Colores</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg"></div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Color Principal</p>
+                                    <p class="text-sm text-gray-600">Gradiente: Púrpura (#9333ea) a Rosa (#ec4899)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-16 h-16 bg-gray-900 rounded-lg"></div>
+                                <div>
+                                    <p class="font-medium text-gray-900">Color Secundario</p>
+                                    <p class="text-sm text-gray-600">Gris Oscuro (#111827)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Tipografía</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-medium text-gray-900">Títulos</p>
+                                <p class="text-2xl font-bold">Inter Bold</p>
+                            </div>
+                            <div>
+                                <p class="font-medium text-gray-900">Texto</p>
+                                <p class="text-lg">Inter Regular</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Logo</h3>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                            CulturalHub
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Site Map Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Mapa del Sitio</h2>
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <img src="./images/diagram.png" alt="Diagrama del Sitio" class="w-full h-auto">
+            </div>
+        </section>
+
+        <!-- Prototype Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Prototipo</h2>
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <div class="text-center">
+                    <p class="text-gray-600 mb-6">Los wireframes y el prototipo interactivo están disponibles en Figma:</p>
+                    <a href="https://www.figma.com/design/rG9FntjCgiCfHswkzAXbFe/Untitled?t=Y7iGiRNxkfiftRnH-1" target="_blank" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition-all">
+                        Ver Prototipo en Figma
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Organization Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Organización del Equipo</h2>
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Roles y Responsabilidades</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium text-gray-900">Tomas Bialobroda</h4>
+                                <p class="text-gray-600">Diseñador UX/UI y Maquetador</p>
+                                <ul class="list-disc list-inside text-gray-600 mt-2">
+                                    <li>Diseño de la interfaz de usuario</li>
+                                    <li>Creación de wireframes</li>
+                                    <li>Implementación del diseño con HTML y Tailwind CSS</li>
+                                </ul>
+                            </div>
+                            <!-- Add more team members here -->
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Tareas Realizadas</h3>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Investigación del público objetivo</li>
+                            <li>Desarrollo de la identidad visual</li>
+                            <li>Creación del mapa del sitio</li>
+                            <li>Diseño de wireframes</li>
+                            <li>Implementación del diseño responsive</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="mb-4">
+                        <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                            CulturalHub
+                        </span>
+                    </div>
+                    <p class="text-gray-400">El centro cultural más vibrante para jóvenes creativos</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Navegación</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Eventos</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Talleres</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Galería</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Tickets</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Información</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Sobre Nosotros</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contacto</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Accesibilidad</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Contacto</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p>Av. Cultura 123</p>
+                        <p>Centro Histórico, CDMX</p>
+                        <p>Tel: (55) 1234-5678</p>
+                        <p>info@culturalhub.mx</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 CulturalHub. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html> 
