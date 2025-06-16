@@ -29,37 +29,42 @@
     <script src="js/main.js"></script>
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white/95 backdrop-blur-sm border-b sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-2">
-                    <a href="index.html" class="flex items-center space-x-2">
-                        <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                            CulturalHub
-                        </span>
-                    </a>
+    <header>
+        <!--navegacion-->
+        <nav class="bg-white border-b shadow-sm sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center h-16 gap-6">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    CulturalHub
+                    </span>
+                </a>
+
+                <!-- Enlaces de navegación -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-black hover:text-purple-600 transition-colors">Inicio</a>
+                    <a href="avances.html" class="text-black hover:text-purple-600 transition-colors">Avances</a>
+                    <a href="proyecto.html" class="text-black hover:text-purple-600 transition-colors">Proyecto</a>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-purple-600 transition-colors">Inicio</a>
-                    <a href="avances.html" class="text-gray-900 hover:text-purple-600 transition-colors">Avances</a>
-                    <a href="proyecto.html" class="text-gray-700 hover:text-purple-600 transition-colors">Proyecto</a>
-                </div>
-                <!-- Mobile menu button -->
-                <button class="md:hidden">
-                    <i class="fas fa-bars text-gray-700"></i>
+
+                <!-- Botón menú móvil -->
+                <button id="mobile-menu-toggle" class="md:hidden ml-auto">
+                    <i class="fas fa-bars text-gray-700 text-xl"></i>
                 </button>
+                </div>
             </div>
-        </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-4 py-2 space-y-2">
-                <a href="index.html" class="block py-2 text-gray-700">Inicio</a>
-                <a href="avances.html" class="block py-2 text-gray-900">Avances</a>
-                <a href="proyecto.html" class="block py-2 text-gray-700">Proyecto</a>
+
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+                <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-black">Inicio</a>
+                <a href="avances.html" class="block py-2 text-black">Avances</a>
+                <a href="proyecto.html" class="block py-2 text-black">Proyecto</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -182,86 +187,87 @@
             </div>
         </section>
 
-        <!-- Team Organization Section -->
         <section class="mb-16">
             <h2 class="text-3xl font-bold text-gray-900 mb-8">Organización del Equipo</h2>
             <div class="bg-white rounded-xl p-8 shadow-sm">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Roles y Responsabilidades</h3>
-                        <div class="space-y-4">
-                            <div>
-                                <h4 class="font-medium text-gray-900">Tomas Bialobroda</h4>
-                                <p class="text-gray-600">Diseñador UX/UI y Maquetador</p>
-                                <ul class="list-disc list-inside text-gray-600 mt-2">
-                                    <li>Diseño de la interfaz de usuario</li>
-                                    <li>Creación de wireframes</li>
-                                    <li>Implementación del diseño con HTML y Tailwind CSS</li>
-                                </ul>
-                            </div>
-                            <!-- Add more team members here -->
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Tareas Realizadas</h3>
-                        <ul class="list-disc list-inside text-gray-600 space-y-2">
-                            <li>Investigación del público objetivo</li>
-                            <li>Desarrollo de la identidad visual</li>
-                            <li>Creación del mapa del sitio</li>
-                            <li>Diseño de wireframes</li>
-                            <li>Implementación del diseño responsive</li>
-                        </ul>
-                    </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-6">Roles y tareas realizadas</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div>
+                    <h4 class="font-medium text-gray-900">Tomas Bialobroda</h4>
+                    <p class="text-gray-600">Programador</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                    <p>Encargado de la implementacion de la estructura HTML, CCS y JS en el sitio web de avances, aplicando los titulos y textos correspondientes
+                        en cada pagina. Creador del repositorio donde se encuentra guardado el sitio.
+                        
+                    </p>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-900">Gennaro Ferreyra Mansutti</h4>
+                    <p class="text-gray-600">Programador</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                    <p>Encargado de la implementacion de la estrcutura HTML, CSS y JS en el sitio web del proyecto, realizando y completanto 
+                        los titulos y textos correspondientes en las paginas, como tambien los estilados correspondientes para el proyecto sea responsive.
+                    </p>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-900">Julián Gallo</h4>
+                    <p class="text-gray-600">Programador</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                    <p>Programador del sitio, implementando y modificando codigo HTML, CSS y JS al sitio web de avances
+                        para lograr un mejor resultado tanto en vista dektop como en mobile. Aplicando a la estructura existente, estilados y animaciones
+                        para una mejor calidad en el sitio como tambien los enlaces a sitios externos.
+                    </p>
+                    </ul>
+                </div>
+
+                <!-- Nueva fila: últimos dos miembros -->
+                <div>
+                    <h4 class="font-medium text-gray-900">Sebastian Tadeo Avila</h4>
+                    <p class="text-gray-600">Diseñador UX/UI</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                    <p>Encargado del prototipo del sitio web en figma, aplicando y detallando lo realizado pagina por pagina
+                        para retratarlo en imagenes. Creador del logo de nuestro proyecto.
+                    </p>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-900">Agustina Alejandra Martin</h4>
+                    <p class="text-gray-600">Comunicadora web</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-2">
+                    <p>Encargada de la realizacion del video explicativo del sitio web creado, tomando como referencia
+                        ejemplos hechos por otras empresas u emeprendimientos. Controlo y comunico avances del trabajo y las 
+                        tareas a realizar.
+                    </p>
+                    </ul>
+                </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="mb-4">
-                        <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                            CulturalHub
-                        </span>
-                    </div>
-                    <p class="text-gray-400">El centro cultural más vibrante para jóvenes creativos</p>
-                </div>
-                <div>
-                    <h3 class="font-semibold mb-4">Navegación</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Eventos</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Talleres</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Galería</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Tickets</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold mb-4">Información</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Sobre Nosotros</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Contacto</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Accesibilidad</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold mb-4">Contacto</h3>
-                    <div class="space-y-2 text-gray-400">
-                        <p>Av. Cultura 123</p>
-                        <p>Centro Histórico, CDMX</p>
-                        <p>Tel: (55) 1234-5678</p>
-                        <p>info@culturalhub.mx</p>
-                    </div>
-                </div>
+
+            <div class="text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"><a href="./index.html">
+                CulturalHub</a>
+                </span>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 CulturalHub. Todos los derechos reservados.</p>
+            <p class="text-gray-400 mb-8">
+                El centro cultural más vibrante para jóvenes creativos
+            </p>
             </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 CulturalHub. Todos los derechos reservados.</p>
+            </div>
+
         </div>
     </footer>
+
 
     <script>
         function toggleMobileMenu() {
